@@ -93,7 +93,7 @@ def main():
     while True:
         # ask the user for their question
         new_question = input(
-            Fore.GREEN + Style.BRIGHT + "What can I get you?: " + Style.RESET_ALL
+            Fore.GREEN + Style.BRIGHT + "What is in your mind?: " + Style.RESET_ALL
         )
         # check the question is safe
         errors = get_moderation(new_question)
@@ -113,7 +113,7 @@ def main():
         previous_questions_and_answers.append((new_question, response))
 
         # print the response
-        print(Fore.CYAN + Style.BRIGHT + "Here you go: " + Style.NORMAL + response)
+        print(Fore.CYAN + Style.BRIGHT + "Hmmm... " + Style.NORMAL + response)
 
 
 if __name__ == "__main__":
